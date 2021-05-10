@@ -11,6 +11,12 @@ Product.init(
   {
     // define columns
     //default id
+    id: {
+      type: DataTypes.INTEGER,
+      allowNull:false,
+      primaryKey:true,
+      autoIncrement:true
+    },
     //product_name (string, NOT NULL)
     product_name: {
       type: DataTypes.STRING,
